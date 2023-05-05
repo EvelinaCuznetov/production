@@ -35,7 +35,7 @@ body {
 }
 .info {
     display: inline-block;
-   transform: translateY(-5px) translateX(-145px);
+   transform: translateY(-5px) translateX(-150px);
 }
 .info :first-child {
     display: inline-block;
