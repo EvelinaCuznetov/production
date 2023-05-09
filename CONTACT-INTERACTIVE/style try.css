@@ -6,11 +6,62 @@ body {
 }
 .contacts li {
     display: table;
+    padding: .25em;
+}
+.contacts li > * {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1em;
+    transition: 1s;
 }
 .contacts ul {
     list-style: none;
     padding: 0;
     margin: 0;
+
+}
+
+.contacts .edit a  {
+    text-decoration: none;
+    background-color: #111;
+    color: #ddd;
+    display: block;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 2em;
+    transform: translateY(-1.4em);
+}
+.contacts .edit a:hover {
+background-color: #151515;
+color: white;
+}
+.contacts .edit-contact div {
+    padding-left: 1em;
+    transform: translateX(2em) translateY(1.3em);
+    display: inline-block;
+    margin-right: 1.5em;
+}
+.contacts #options .edit-contact>div {
+    width: 0;
+    transition: 1.5s;
+    overflow: hidden;
+}
+.contacts #options:target .edit-contact>div {
+    width: 100%;
+}
+.contact span#options:target> * {
+    transform: translateX(5em);
+    transition: 1.5s;
+}
+.contacts .edit-contact>div>a {
+    text-decoration: none;
+    color: #129;
+}
+.contacts .edit-contact>div>a:hover {
+    color: yellow;
+    transition: 0.7s;
 }
 
 .contacts .avatar img {
@@ -23,9 +74,58 @@ body {
     display: inline-block;
     margin-left: -0.9em;
 }
-.avatar {
-    display: table-cell;
+.contacts .info > span {
+    display: table-row;
+
 }
+.contacts .action {
+    padding-left: 3em;
+}
+.contacts .action a.add {
+    text-decoration: none;
+    background-color: #111;
+    color: #ddd;
+    display: block;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 2em;
+}
+.contacts .action a.add:hover {
+    background-color: #151515;
+    color: white;
+}
+.contacts .add-details >div {
+    /*display: none;*/
+    /*opacity: 0;*/
+    width: 0;
+    transition: 1.5s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.contacts .add-details>div>a {
+    text-decoration: none;
+    color: #129;
+}
+.contacts .add-details>div>a:hover {
+    color: yellow;
+    transition: 0.7s;
+}
+
+.contacts li:target .add-details>
+div {
+    /* display: table-cell*/
+    /*opacity: 1;*/
+    width: 100%;
+}
+.contacts li:target .edit-contact>div {
+    transform: translateX(19em);
+}
+.contacts li:target > * {
+    transform: translateX(-18em);
+}
+
 .status.off {
     border: 1px solid #777;
     background-color: #444;
@@ -34,12 +134,4 @@ body {
     border: 1px solid green;
     background-color: lightgreen;
 }
-.info {
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 5px;
-    
-}
-.info span {
-    display: table-row;
-}
+
