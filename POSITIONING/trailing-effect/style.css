@@ -1,0 +1,60 @@
+body {
+    background-color: #111;
+}
+.container {
+    position: absolute;
+    background-color: rgb(25, 4, 65);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    perspective: 1000px;
+
+}
+.container .hearts {
+    position: absolute;
+    /* background-color: #349b4a; */
+    width: 160px;
+    height: 160px;
+    margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+    transform-style: preserve-3d;
+    animation: entrance 10s ease-in;
+    animation-fill-mode: forwards;
+}
+.container i {
+   color: #812413;
+   font-size: 1000%;
+
+   display: block;
+   position: absolute;
+}
+.container i:nth-child(1) {
+    transform: translateZ(-800px);
+    opacity: .2;
+}
+.container i:nth-child(2) {
+    transform: translateZ(-600px);
+    opacity: .4;
+}
+.container i:nth-child(3) {
+    transform: translateZ(-400px);
+    opacity: .6;
+}
+.container i:nth-child(4) {
+    transform: translateZ(-200px);
+    opacity: .8;
+}
+
+
+@keyframes entrance {
+    from {
+        transform: translateZ(-5000px);
+    }
+    to {transform: translateZ(20000px);
+    }
+}
