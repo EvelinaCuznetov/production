@@ -1,0 +1,56 @@
+html {
+    height: 100%;
+}
+
+body, figure {
+    margin: 0;
+    height: 100%;
+}
+
+.carousel {
+    /* width: 100vw;
+    height: 100vh; */
+    
+    /* position: absolute;
+    top: 10%;
+    left: 10%; */
+
+    
+    /* flexbox */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 20px;
+
+}
+.carousel a {
+    text-decoration: none;
+    font-size: 50px;
+    color: rgb(10, 10, 92);
+    margin: 30px;
+}
+.carousel img {
+    /* margin: 0 20px; */
+   
+}
+.carousel figcaption {
+      /* flexbox */
+    width: 100%;
+    text-align: center;
+    align-self: start;
+
+}
+.carousel h2 {
+    font: 200% Arial;
+}
+
+        /* STYLING MOBILE  */
+
+@media (max-width: 1260px) {
+    .carousel img:nth-child(2),
+    .carousel img:nth-child(3) {
+        display: none;
+    }
+}
+
