@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>NAVBAR | Flex</title>
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #111;
+            /* height: 100vh; */
+
+            display: flex;
+            justify-content: flex-start;
+            /* flex-direction: column; */
+        }
+        @media (max-width: 800px) {
+                .navbar ul {
+                    flex-direction:column;
+                }
+            }
+
+        .navbar li {
+            border: 1px solid red;
+            padding: 0.5em;
+        }
+        .navbar .lorem {
+            font-size: 30px;
+            padding: 0.5em;
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+ </head>
+ <body>
+    <nav class="navbar">
+        <ul>
+            <li class="lorem"><a href="">Lorem.</a></li>
+            <li><a href="">Mollitia!</a></li>
+            <li><a href="">Nesciunt.</a></li>
+            <li><a href="">Ab.</a></li>
+            <li><a href="">Aliquid.</a></li>
+            <li><a href="">Voluptas.</a></li>
+            <li><a href="">Fuga.</a></li>
+        </ul>
+    </nav>
+    
+ </body>
+ </html>
