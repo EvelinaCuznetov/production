@@ -3,23 +3,18 @@ body {
     background-color: #333;
     font-family: 'Oswald', sans-serif;
 }
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-a {
-    text-decoration: none;
-}
 .navbar {
     background-color: #222;
+    --margin-1: 100px;
+    --margin-2: 50px;
+    --color: white;
 }
 .fix {
     clear: both;
 }
 .navbar>ul.branding {
-    margin-right: 100px;
-    margin-left: 50px;
+    margin-right: var(--margin-1);
+    margin-left: var(--margin-2);
 }
 .navbar>ul.branding li:nth-child(2) {
     margin-top: -6px;
@@ -38,7 +33,16 @@ a {
 }
 .navbar>ul.client {
     float: right;
-    margin-right: 50px;
+    margin-right: var(--margin-2);
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 .navbar>ul>li {
     float: left;
@@ -46,5 +50,5 @@ a {
     
 }
 .navbar>ul>li>a {
-    color: white;
+    color: var(--color);
 }
