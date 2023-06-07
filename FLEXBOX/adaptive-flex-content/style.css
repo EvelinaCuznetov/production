@@ -1,0 +1,41 @@
+body {
+    font-family: 'caviar_dreams ';
+}
+          /* #####  MOBILE ##### */
+
+/* BEM-COMMON */
+
+.container {
+    /* width: 96%; */
+    margin: 0 1em;
+}
+img {
+    width: 100%;
+}
+ /* BEM - COMPONENTS */
+.content-main {
+    display: flex;
+    flex-direction: column;
+}
+.content-main__header {
+    margin-bottom: 1em;
+}
+.content-main__news-wrapper {
+    border-top: 1px solid #AAA;
+    position: relative;
+}
+.content-main .news-wrapper__label {
+    background-color: white;
+    position: absolute;
+    top: calc( -0.83em - 1.15em /2 - 1ex / 2 );
+    padding-right: 1em;
+    color: #999;
+}
+.content-main__news {
+    margin-top: 1.0em;
+}
+.content-main__news-wrapper .content-main__news {
+    margin-top: 2em;
+}
+
+
