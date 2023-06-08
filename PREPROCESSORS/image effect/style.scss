@@ -1,0 +1,36 @@
+$color-dark: #123;
+$color-light: rgb(231, 132, 51);
+
+body {
+    background-color: $color-dark;
+    margin: 0;
+}
+figure {
+    // margin: 10vh auto;
+    // width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+figure img {
+    width: 400px;
+    border: 5px solid darken($color-light,20%);
+    box-shadow: 0 0 2px 3px darken($color-light, 40%);
+}
+figure img:hover {
+    box-shadow: 0 0 3px 4px darken($color-light, 30%);
+    border-color: $color-light;
+}
+figure figcaption {
+    text-align: center;
+    font-family: Arial;
+}
+figure figcaption h2 {
+    margin-bottom: 0;
+    color: $color-light;
+}
+figure figcaption h3 {
+    margin-top: 1vh;
+    color: darken($color-light, 30%);
+}
