@@ -30,7 +30,6 @@ button {
     box-shadow: 0 0 $size / 20 1px darken($colorDark, 7%);
     text-shadow: 0 0 1px darken($colorLight, 7%);
     font-size: $size / 6;
-    animation: rotate 5s infinite;
 
     &:hover {
         box-shadow: 0 0 1px $size / 100 darken($colorDark, 7%);
@@ -41,6 +40,7 @@ button {
             darken($colorLight, 7%),
             lighten($colorLight, 60%));
         border-color: $colorLight;
+        animation: rotate 5s infinite;
         }
     &:active {
       @keyframes rotate {

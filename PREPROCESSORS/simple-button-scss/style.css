@@ -14,13 +14,13 @@ button {
   box-shadow: 0 0 5px 1px #101010;
   text-shadow: 0 0 1px #420000;
   font-size: 16.6666666667px;
-  animation: rotate 5s infinite;
 }
 button:hover {
   box-shadow: 0 0 1px 1px #101010;
   text-shadow: 0 0 1px #420000;
   background-image: linear-gradient(#ff9999, #420000, #ff9999);
   border-color: #600;
+  animation: rotate 5s infinite;
 }
 @keyframes rotate {
   from {
