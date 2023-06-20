@@ -1,0 +1,22 @@
+.bg-landscape {
+    background-image: url(img/winter-landscape-2014228_1920.jpg);
+    background-size: cover;
+}
+
+.tree-left {
+    background-image: url(img/Christmas-Tree-PNG-Photos.png);
+    background-repeat: no-repeat;
+    background-position: -570px -350px;
+    filter: brightness(50%) contrast(110%);
+}
+.white-wolf {
+    width: 100px;
+    height: 100px;
+    background-image: url(img/White-Wolf-With-Transparent-PNG.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 30px;
+    right: 150px;
+    filter: brightness(40%) contrast(120%);
+}
