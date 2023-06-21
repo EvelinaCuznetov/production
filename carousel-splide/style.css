@@ -1,0 +1,16 @@
+body {
+    background-color: #345;
+}
+.splide {
+    width: 75vw;
+    height: 75vh;
+    margin: 13vh auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.splide__list li {
+    display: flex;
+    justify-content: center;
+}
