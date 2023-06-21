@@ -1,0 +1,14 @@
+.swiper-bali {
+    width: 100%;
+    height: 80vh;
+    --swiper-pagination-bottom: 10%;
+    --swiper-scrollbar-bottom: 9%;
+}
+
+.swiper-bali .swiper-slide {
+  /* text-align: center; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
