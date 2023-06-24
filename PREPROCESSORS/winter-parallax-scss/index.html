@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winter SCSS and Parallax</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="snow.css">
     <link rel="stylesheet" href="parallax.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sections.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#presentation">
-                <i class="fa-solid fa-person-snowboarding"></i>
-                Snowboard School
-            </a></li>
-            <li><a href="#reviews">
-                <i class="fa-solid fa-calendar-days"></i>
-                Events
-            </a></li>
-            <li><a href="#apply">
-                <i class="fa-solid fa-circle-info"></i>
-                Information
-            </a></li>
+<nav class="navbar">
+   <ul>
+        <li><a href="#presentation">
+        <i class="fa-solid fa-person-snowboarding"></i>
+        Snowboard School
+        </a></li>
+
+        <li><a href="#reviews">
+        <i class="fa-regular fa-star"></i>
+        Reviews
+        </a></li>
+        <li><a href="#apply">
+        <i class="fa-solid fa-circle-info"></i>
+        Information
+        </a></li>
         </ul>
     </nav>
 
@@ -39,10 +43,88 @@
         <a href="#apply">BOOK NOW!</a>
     </section>
     <section id="reviews" class="section">
+
         <h1>reviews</h1>
-    </section>
-    <section id="apply" class="section">
+          
+<div class="splide" role="group" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+    <ul class="splide__list">
+<li class="splide__slide">
+        <div class="review">
+          <div class="user-name">
+            <h2>Michael Smith</h2>
+                ⭐⭐⭐⭐⭐
+</div>
+ <div class="user-comment">
+    <p>Great teachers, great location, great atmosphere and attitude to everyone!</p>
+  </div> 
+</li>
+        
+  <li class="splide__slide">
+    <div class="review">
+       <div class="user-name">
+           <h2>John Obama</h2>
+                ⭐⭐⭐⭐
+         </div>
+<div class="user-comment">
+    <p>Great place. Nice view.</p>
+ </div>
+     </div>
+        
+ </li>
+        
+ <li class="splide__slide">
+    <div class="review">
+      <div class="user-name">
+        <h2>Sophie Monroe</h2>
+            ⭐⭐⭐⭐⭐
+</div>
+<div class="user-comment">
+  <p>Matt was a great instructor, patient and calm. I definetely recommend!</p>
+    </div>
+       </div>
+          </li>
+        </ul>
+    </div>
+</div>
+
+    </section> 
+    <section id="apply" class="section form">
         <h1>apply</h1>
+
+        <form class="apply-form">
+            <fieldset>
+                
+                <legend>Your personal information</legend>
+            <label for="first-name">
+                First Name
+            </label><br>
+            <input type="text" id="first-name"><br>
+           
+            <label for="last-name">
+                Last name
+            </label><br>
+            <input type="text" id="last-name"><br>
+            <label for="email">
+                Your Email
+            </label><br>
+            <input type="text" id="email"><br>
+            <label for="phone">
+                Your phone number
+            </label>
+            <input type="text" id="phone"><br>
+            <label for="birthday">Date of Birth</label>
+            <input type="date" name="date-of-birth">
+            </fieldset>
+</form>
+       <form>
+           <fieldset>
+                <legend>Admission</legend>
+             <label for="availability">
+             </label>
+                <button class="btn">Check availability</button>
+       </form>
+        </fieldset>
     
     </section>
 
@@ -154,12 +236,19 @@
       <div class="layer layer-2"></div>
       <div class="layer layer-3"></div>
       <div class="layer layer-4">
-          <div class="white-wolf">
+          <div class="white-bear">
         </div>
     </div>
     <div class="layer layer-5 bg-landscape"></div>
     </div> 
     
-  
+  <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide');
+        splide.mount();
+    });
+</script>
 </body>
 </html>

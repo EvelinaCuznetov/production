@@ -40,7 +40,8 @@ body {
         z-index: 999;
     }
     
-        h1 {
+        & h1 {
+              margin-top: 15vh;
               font-size: 5vh;
           }
 
@@ -51,6 +52,82 @@ body {
        img {
         width: 20vw;
        }
+
+       a {
+        text-decoration: none;
+        color: white;
+        border: 1px dotted white;
+        padding: 10px;
+
+        &:hover {
+            color: yellow;
+        }
+       }
     }
 
+    &#reviews {
+       margin-bottom: 780px;
+    }
 }
+
+.parallax-container {
+  & .splide {
+    width: 75vw;
+    height: 60vh;
+    margin: 1vw auto;
+
+    display: flex;
+    align-items: center;
+  }
+
+.splide__list li {
+    display: flex;
+    justify-content: center;
+  }
+
+& .review {
+width: 40vw;
+border: 5px solid rgb(69, 62, 78);
+padding: 10px 40px;
+background-color: white;
+color: black;
+}
+}
+
+.form {
+    & h1 {
+        bottom: 60px;
+
+    }
+            width: 800px;
+            // margin-top: -290px;
+            transform: translateX(600px) translateY(-290px);
+        & label {
+            display: inline-block;
+            padding: 5px 20px;
+            color: darkgrey;
+            
+            
+        }
+    
+        & input {
+            display: inline-block;
+            width: 80%;
+            border: 2px solid rgb(73, 73, 247);
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 7px;
+        }
+        & .btn {
+            border: 0;
+            background-color: rgb(35, 20, 51);
+            padding: 10px;
+            color: white;
+            margin: 5px 0;
+            width: 630px;
+            &:hover {
+                background-color: green;
+            }
+        }
+
+    }

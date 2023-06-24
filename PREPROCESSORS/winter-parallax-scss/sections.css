@@ -37,6 +37,7 @@ body {
   z-index: 999;
 }
 .section h1 {
+  margin-top: 15vh;
   font-size: 5vh;
 }
 .section#presentation h1 {
@@ -44,4 +45,67 @@ body {
 }
 .section#presentation img {
   width: 20vw;
+}
+.section#presentation a {
+  text-decoration: none;
+  color: white;
+  border: 1px dotted white;
+  padding: 10px;
+}
+.section#presentation a:hover {
+  color: yellow;
+}
+.section#reviews {
+  margin-bottom: 780px;
+}
+
+.parallax-container .splide {
+  width: 75vw;
+  height: 60vh;
+  margin: 1vw auto;
+  display: flex;
+  align-items: center;
+}
+.parallax-container .splide__list li {
+  display: flex;
+  justify-content: center;
+}
+.parallax-container .review {
+  width: 40vw;
+  border: 5px solid rgb(69, 62, 78);
+  padding: 10px 40px;
+  background-color: white;
+  color: black;
+}
+
+.form {
+  width: 800px;
+  transform: translateX(600px) translateY(-290px);
+}
+.form h1 {
+  bottom: 60px;
+}
+.form label {
+  display: inline-block;
+  padding: 5px 20px;
+  color: darkgrey;
+}
+.form input {
+  display: inline-block;
+  width: 80%;
+  border: 2px solid rgb(73, 73, 247);
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+.form .btn {
+  border: 0;
+  background-color: rgb(35, 20, 51);
+  padding: 10px;
+  color: white;
+  margin: 5px 0;
+  width: 630px;
+}
+.form .btn:hover {
+  background-color: green;
 }/*# sourceMappingURL=sections.css.map */

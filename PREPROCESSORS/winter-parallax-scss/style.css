@@ -10,14 +10,14 @@
   filter: brightness(50%) contrast(110%);
 }
 
-.white-wolf {
-  width: 100px;
+.white-bear {
+  width: 70px;
   height: 100px;
-  background-image: url(img/White-Wolf-With-Transparent-PNG.png);
+  background-image: url(img/white-bear.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   bottom: 30px;
   right: 150px;
-  filter: brightness(40%) contrast(120%);
+  filter: brightness(50%) contrast(120%);
 }/*# sourceMappingURL=style.css.map */
