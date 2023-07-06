@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP 5.x | offCanvas component</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+ <div class="container mt-5">
+    <h1>BOOTSTRAP 5.x | offCanvas component</h1>
+    <h2>e-shop / cart</h2>
+ </div>
+
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">E-shop</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 ps-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-person-circle"></i> Your account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-heart"></i> Favorites</a>
+                </li>
+            </ul>
+            <button class="btn btn-outline-primary me-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart">
+                <i class="bi bi-cart-fill"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" 
+tabindex="-1"
+id="offcanvasCart" 
+aria-labelledby="offcanvasCartLabel">
+
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body flex-grow-0">
+        <!-- <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Samsung XXII</td>
+                    <td>x 2</td>
+                    <td>2000EUR</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Macbook M2 full silver version</td>
+                    <td>x 1</td>
+                    <td>3000EUR</td>
+                </tr>
+                <tr>
+                    <th>TOTAL</th>
+                    <td></td>
+                    <td>x 3</td>
+                    <td>7000EUR</td>
+                </tr>
+            </tbody>
+        </table> -->
+
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Samsung XXII</div>
+                    x 2
+                </div>
+                <span class="badge bg-primary rounded-pill">2000 EUR</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Macbook M2 full silver version</div>
+                    x 1
+                </div>
+                <span class="badge bg-primary rounded-pill">3000 EUR</span>
+            </li>
+            <ul class="list-group list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">TOTAL</div>
+                    x 3
+                </div>
+                <span class="badge bg-primary rounded-pill">7000 EUR</span>
+            </li>
+            </ul>
+            <button class="btn btn-danger btn-sm">Only today!!! -500 EUR</button>
+            <button class="btn btn-warning btn-lg">Final Price 6500 EUR</button>
+        </ol>
+
+    </div>
+<div class="p-3 text-end">
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#ModalManage">Manage items <i class="bi bi-sliders2"></i></button>
+    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#ModalCheckout">Checkout <i class="bi bi-arrow-right-square-fill"></i></button>
+</div>
+
+</div>
+<!-- Modal -->
+<div class="modal fade" id="ModalManage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Manage items <i class="bi bi-sliders2"></i></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="offcanvas-body flex-grow-0">
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Samsung XXII</div>
+                            <button class="btn btn-danger btn-sm">-</button> 2 <button class="btn btn-success btn-sm">+</button>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">2000 EUR</span>
+                        <a class="delete ms-3" href="#"><i class="bi bi-trash"></i></a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Macbook M2 full silver version</div>
+                            <button class="btn btn-danger btn-sm">-</button> 1 <button class="btn btn-success btn-sm">+</button>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">3000 EUR</span>
+                        <a class="delete ms-3" href="#"> <i class="bi bi-trash"></i></a>
+                    </li>
+                    <ul class="list-group list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">TOTAL</div>
+                                x 3
+                            </div>
+                            <span class="badge bg-primary rounded-pill">7000 EUR</span>
+                    </ul>
+                    </li>
+                </ol>
+                
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade modal-xl" id="ModalCheckout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Please fill up all fields. Your order may not be processed with incomplete information.</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <span class="input-group-text">First and last name</span>
+                    <input type="text" aria-label="First name" class="form-control" placeholder="first name">
+                    <input type="text" aria-label="Last name" class="form-control" placeholder="last name">
+                </div> <br>
+                <div class="input-group">
+                    <span class="input-group-text">Phone</span>
+                    <input type="text" aria-label="Phone Number" class="form-control" placeholder="Phone number">
+                </div> <br>
+                <div class="input-group">
+                    <span class="input-group-text">E-mail</span>
+                    <input type="text" aria-label="E-mail" class="form-control" placeholder="E-mail">
+                </div> <br>
+                <div class="input-group">
+                    <span class="input-group-text">Shipping Adress</span> <br>
+                    <input type="text" aria-label="Street adress" class="form-control" placeholder="Street Adress"><br>
+                    <input type="text" aria-label="Street adress" class="form-control" placeholder="Street Adress Line 2"><br>
+                    <input type="text" aria-label="City" class="form-control" placeholder="City">
+                    <input type="text" aria-label="Region" class="form-control" placeholder="Region">
+                </div> <br>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Continue to Payment</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+
+</body>
+</html>
