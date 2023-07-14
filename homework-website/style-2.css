@@ -61,16 +61,19 @@ body {
    margin-left: 50px;
    
 }
+.nav-link:hover {
+    color: #DC3545;
+}
 .nav-item {
     padding: 7px;
 }
-.submenu {
+.submenu-1 {
     display: none;
 }
-.submenu li {
+.submenu-1 li {
     padding-bottom: 7px;
 }
-.home:hover .submenu {
+.home:hover .submenu-1 {
     display: block;
     height: 170px;
     width: 230px;
@@ -78,7 +81,25 @@ body {
     position: absolute;
     padding: 30px;
     font-size: 15px;
+    z-index: 2;
 }
-.submenu a:hover {
+.submenu-1 a:hover {
+    color: #DC3545;
+}
+.submenu-2 {
+    display: none;
+}
+.shop:hover .submenu-2 {
+    display: block;
+    border: 1px solid rgba(119, 136, 153, 0.26);
+    width: 600px;
+    position: absolute;
+    margin-left: -70px;
+    height: 240px;
+    background-color: white;
+    padding: 20px 10px;
+
+}
+.submenu-2 a:hover {
     color: #DC3545;
 }
