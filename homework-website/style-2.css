@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+    height: 45px;
+    border-bottom: 1px solid rgba(119, 136, 153, 0.438);
+}
+.navbar {
+    width: 80%;
+    margin: 2px 140px;
+}
+.navbar p {
+    margin-left: -20px;
+}
+.navbar ul {
+    list-style: none;
+    padding-left: 5px;
+}
+.navbar ul li {
+    float: left;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.select-1, .select-2 {
+    display: none;
+}
+
+.navbar .select li:hover .select-1 {
+    display: block;
+    position: absolute;
+    border: 1px solid rgba(211, 211, 211, 0.705);
+    background-color: white;
+    padding: 20px 40px;
+    transform: translateX(-110px);
+    z-index: 1;
+}
+.navbar .select li:hover .select-2 {
+    display: block;
+    position: absolute;
+    border: 1px solid rgba(211, 211, 211, 0.705);
+    background-color: white;
+    padding: 20px 35px;
+    transform: translateX(-70px);
+    z-index: 1;
+}
+
+.navbar .select .select-1 a:hover {
+    color: brown;
+}
+.navbar .select .select-2 a:hover {
+    color: brown;
+}
+.container-fluid {
+    margin-left: 40px;
+}
+.navbar-nav {
+   margin-left: 50px;
+   
+}
+.nav-item {
+    padding: 7px;
+}
+.submenu {
+    display: none;
+}
+.submenu li {
+    padding-bottom: 7px;
+}
+.home:hover .submenu {
+    display: block;
+    height: 170px;
+    width: 230px;
+    border: 1px solid rgba(119, 136, 153, 0.349);
+    position: absolute;
+    padding: 30px;
+    font-size: 15px;
+}
+.submenu a:hover {
+    color: #DC3545;
+}
