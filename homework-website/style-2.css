@@ -169,9 +169,10 @@ form {
     height: 500px;
 }
 .img {
-    height: 600px;
+    height: 650px;
     float: right;
     padding: 50px 300px 150px 100px;
+    margin-right: -100px;
 
 }
 .carousel-caption {
@@ -199,15 +200,72 @@ button {
 .carousel-caption button:hover {
     background-color: #DC3545;
 }
-.indicator-1 {
+.indicator-l {
     width: 60px;
     height: 60px;
     margin-top: 200px;
     margin-left: 20px;
 }
-.indicator-2 {
+.indicator-r {
     width: 60px;
     height: 60px;
     margin-top: 200px;
     margin-right: 20px;
 }
+
+.col a {
+    text-decoration: none;
+}
+
+.collection img{
+    margin-top: 80px;
+    height: 350px;
+    width: 350px;
+}
+.details.table p,
+.details.flatware p{
+    transform: translateX(40px) translateY(-330px);
+    text-align: start;
+    margin: 0;
+    padding: 0;
+}
+.details :first-child {
+    color: #222222de;
+    font-size: 20px;
+}
+.details.table :nth-child(2),
+.details.flatware :nth-child(2) {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.details.table :nth-child(3),
+.details.flatware
+ :nth-child(3) {
+    font-size: 25px;
+    margin-top: -10px;
+}
+.details.table :last-child,
+.details.flatware :last-child {
+    font-size: 15px;
+    margin-top: 15px;
+    color: #222222e7;
+    border-bottom: 2px solid #DC3545;
+    width: 100px;
+}
+.details.dinning p {
+    transform: translateY(-330px);
+    margin: 0;
+    padding: 0;
+}
+.details.dinning :nth-child(2) {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.details.dinning :last-child{
+    font-size: 25px;
+    margin-top: -10px;
+    color: #222222da;
+}
+
