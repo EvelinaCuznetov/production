@@ -31,9 +31,9 @@
    </ul>
 </nav>
 
-<nav class="navbar navbar-expand-lg ms-5 mt-4">
+<nav class="navbar navbar-expand-lg ms-5 mt-2">
     <div class="container-fluid">
-        <a class="navbar-brand fw-bold fs-1" href="#">Debaco</a>
+        <a class="navbar-brand fw-bold fs-2" href="#">Debaco</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -81,17 +81,56 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                 <td><a href="">Checkout</a></td>
-                                
+                                <td><a href="">Checkout</a></td>
+                    
+                    
                             </tr>
                         </tbody>
                     </table>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item blog">
                     <a class="nav-link" href="#">BLOG ⌵</a>
+                    <table class="table me-5 fw-normal table-borderless submenu-3">
+                        <tbody>
+                            <tr>
+                                <td><a class="fs-6 fw-bold me-5" href="">Blog Layouts</a></td>
+                                <td><a class="fs-6 fw-bold me-5" href="">Blog Pages</a></td>
+                                <td><a class="fs-6 fw-bold me-5" href="">Post Formats</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="">Sidebar Left</a></td>
+                                <td><a href="">Author</a></td>
+                                <td><a href="">Image Format</a></td>
+                    
+                            </tr>
+                            <tr>
+                                <td><a href="">Sidebar Right</a></td>
+                                <td><a href="">Archives</a></td>
+                                <td><a href="">Gallery Format</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="">Large image</a></td>
+                                <td><a href="">Category</a></td>
+                                <td><a href="">Audio Format</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="">Blog Grid</a></td>
+                                <td><a href="">Blog Tag</a></td>
+                                <td><a href="">Video Format</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="">No Sidebar</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pages">
                     <a class="nav-link" href="#">PAGES ⌵</a>
+                        <ul class="submenu-4 fw-normal">
+                            <li><a href="">Frequently Questions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Error 404</a></li>
+                        </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">ABOUT US</a>
@@ -103,21 +142,67 @@
 
             <div class="icons fs-5">
                 <ul>
-                    <li><a href="#"><i class="bi bi-search"></i></a></li>
-                    <li><a href=""><i class="bi bi-person fs-4"></i></a></li>
-                    <li><a href=""><i class="bi bi-heart"></i></a></li>
-                    <li><a href=""><i class="bi bi-cart3"></i></a></li>
+                    <li class="search"><a href="#"><i class="bi bi-search"></i></a>
+
+                    
+                    <form class="flex" role="search">
+                        <input class="form-control m5-1 p-1" type="search" placeholder="Search product..." aria-label="Search">
+                        <button class="btn fs-5 ms-3 p-0" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    </li>
+
+                    <li class="icon"><a href=""><i class="bi bi-person fs-4"></i></a></li>
+                    <li class="icon"><a href=""><i class="bi bi-heart"></i></a></li>
+                    <li class="icon"><a href=""><i class="bi bi-cart3"></i></a></li>
                 </ul>
-
-
-
-            <!-- <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
         </div>
     </div>
 </nav>
+
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/img-1.png" class="d-block img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Sale Offer 50% Off This Week</h5>
+                <p>Linen Oven Gloves In The Kitchen</p>
+                <button>SHOPPING NOW</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/img-2.jpg" class="d-block img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Sale Offer 20% Off This Week</h5>
+                <p>Serving Dishes & Mugs</p>
+                <button>SHOPPING NOW</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/img-3.jpg" class="d-block img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Sale Offer 10% Off This Week</h5>
+                <p>Canvas Cross Back Apron Collection</p>
+                <button>SHOPPING NOW</button>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev indicator-1" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next indicator-2" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
